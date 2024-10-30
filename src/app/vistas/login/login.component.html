@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <meta name="mobile-web-app-capable" content="yes">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <div class="background-image"></div> <!-- Imagen de fondo -->
+  
+    <div class="login-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+  
+      <ion-card class="login-card">
+        <ion-card-content>
+          <h2 class="title"></h2>
+      
+              <form>
+                <ion-item>
+                  <ion-label position="stacked">Run: </ion-label>
+                  <ion-input  type="text" inputmode="text" required></ion-input>
+                </ion-item>
+      
+                <ion-item>
+                  <ion-label position="stacked">Clave</ion-label>
+                  <ion-input type="password" required></ion-input>
+                </ion-item>
+      
+                <ion-button expand="full" class="login-button" (click)="holagg()">Ingresar</ion-button>
+              </form>
+            
+          <p class="forgot-password">¿Olvidaste tu clave?</p>
+        
+        </ion-card-content>
+      </ion-card>
+  
+      <p class="help-text">¿NECESITAS AYUDA?</p>
+    </div>
+  </ion-content>
+  
+</ion-content>

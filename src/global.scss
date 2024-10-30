@@ -35,3 +35,24 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100..900&display=swap');
+
+
+.gen_titulo{
+  font-family: "Raleway", system-ui;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.gen_subtitulo{
+    font-family: "Raleway", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.gen_normal{
+    font-family: "Raleway", system-ui;
+    font-size: 12px;
+  
+}

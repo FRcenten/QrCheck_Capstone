@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Registro de Visitas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding custom-background">
+
+  <!-- Segmento de selección: Visita peatón o vehículo -->
+  <div class="header-section">
+    <ion-segment value="peatón" mode="ios" class="segment-visita" color="light">
+      <ion-segment-button value="peatón">
+        <i class="bi bi-person-fill"></i> <!-- Ícono de Bootstrap para peatón -->
+        Peatón
+      </ion-segment-button>
+      <ion-segment-button value="vehículo">
+        <i class="bi bi-car-front-fill"></i> <!-- Ícono de Bootstrap para vehículo -->
+        Vehículo
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <!-- Sección de tipo de ingreso -->
+  <ion-card class="card-tipo-ingreso">
+    <ion-card-header>
+      <ion-card-title>
+        <i class="bi bi-arrow-left-right"></i> <!-- Ícono de Bootstrap para tipo de ingreso -->
+        Tipo de Ingreso
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-label>Entrada</ion-label>
+        <ion-radio slot="start" value="entrada"></ion-radio>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Salida</ion-label>
+        <ion-radio slot="start" value="salida"></ion-radio>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Información de Visitas -->
+  <ion-card class="card-info">
+    <ion-card-header>
+      <ion-card-title>
+        <i class="bi bi-info-circle"></i> <!-- Ícono de Bootstrap para información -->
+        Información de Visitas
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-label position="floating">Rut</ion-label>
+        <ion-input placeholder="Ingresa tu Rut"></ion-input>
+        <ion-button fill="clear" slot="end">
+          <i class="bi bi-qr-code"></i> <!-- Ícono de Bootstrap para QR -->
+        </ion-button>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Nombres</ion-label>
+        <ion-input placeholder="Ingresa los Nombres"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Apellidos</ion-label>
+        <ion-input placeholder="Ingresa los Apellidos"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Tipo de visita</ion-label>
+        <ion-select placeholder="Seleccionar tipo">
+          <ion-select-option value="negocios">Negocios</ion-select-option>
+          <ion-select-option value="personal">Personal</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón de guardar -->
+  <ion-button expand="block" class="boton-guardar">
+    <i class="bi bi-save"></i> <!-- Ícono de Bootstrap para guardar -->
+    Guardar Visita
+  </ion-button>
+
+</ion-content>
